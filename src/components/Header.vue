@@ -12,16 +12,29 @@
                 <i class="fa fa-pinterest-p" aria-hidden="true"></i>
             </div>
         </nav>
+
         <Navbar></Navbar>
+
+        <Hero :text="this.heroText"></Hero>
     </header>
 </template>
 
 <script>
 import Navbar from './Navbar.vue'
+import Hero from './Hero.vue'
 
 export default {
     name: 'Header',
-    components: { Navbar }
+    components: { Navbar, Hero },
+    data() {
+        return {
+            heroText: {
+                subtitle: '17 years of experience',
+                title: 'Focus on Your Business',
+                text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Separated they live in Bookmarksgrove.'
+            }
+        }
+    }
 }
 </script>
 
@@ -29,8 +42,8 @@ export default {
 @import '@/styles/variables.scss';
 
     .header-container {
-        padding: $spacing * 2;
-        margin-top: $spacing * 2;
+        margin-top: calc(($spacing * .7) * 2 + 18px);
+        background-color: get-values($colors, 'bg', 'whitesmoke');
 
         .nav-secondary {
             background-color: get-values($colors, 'bg', 'grey-2');
@@ -38,6 +51,8 @@ export default {
             top: 0;
             left: 0;
             width: 100%;
+            padding-top: $spacing * .7;
+            padding-bottom: $spacing * .7;
         }
 
         .phone-numbers,

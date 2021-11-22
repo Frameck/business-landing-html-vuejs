@@ -1,5 +1,5 @@
 <template>
-    <button :class="type === 'primary' ? 'btn-primary' : 'btn-secondary'">
+    <button :class="`btn-${type}`">
         <a :href="text.replaceAll(' ', '')">{{ text.toUpperCase() }}</a>
     </button>
 </template>
@@ -27,6 +27,10 @@ export default {
     }
 
     .btn-primary {
-        background: linear-gradient(90deg, rgba(136,228,45,1) 0%, rgba(0,217,166,1) 100%);
+        background: get-values($colors, 'gradients', 'green');
+    }
+
+    .btn-secondary {
+        background: get-values($colors, 'gradients', 'black');
     }
 </style>

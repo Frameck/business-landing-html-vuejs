@@ -60,6 +60,8 @@ export default {
     .navbar-container {
         width: 100%;
         align-items: center;
+        padding: $spacing * 1.5;
+        background-color: get-values($colors, 'global', 'white');
 
         img {
             width: 200px;

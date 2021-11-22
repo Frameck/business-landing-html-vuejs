@@ -13,6 +13,7 @@ $colors: (
     ),
     bg: (
         'blue': #527ceb,
+        'whitesmoke': #f9f9f9,
         'grey-1': #bbbbbb,
         'grey-2': rgb(60, 60, 60),
         'grey-3': rgb(33, 33, 33)
@@ -27,6 +28,10 @@ $colors: (
     borders: (
         'grey-1': #dedede,
         'grey-2': #bbbbbb
+    ),
+    gradients: (
+        'green': linear-gradient(90deg, rgba(136,228,45,1) 0%, rgba(0,217,166,1) 100%),
+        'black': linear-gradient(90deg, rgba(42,42,42,1) 40%, rgba(0,0,0,1) 100%)
     )
 );
 
