@@ -1,7 +1,7 @@
 <template>
-    <div class="main-container">
+    <main class="main-container">
         
-    </div>
+    </main>
 </template>
 
 <script>
@@ -10,6 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/styles/variables.scss';
 
 </style>

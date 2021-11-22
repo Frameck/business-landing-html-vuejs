@@ -1,7 +1,7 @@
 <template>
-    <div class="footer-container">
+    <footer class="footer-container">
         
-    </div>
+    </footer>
 </template>
 
 <script>
@@ -10,6 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '@/styles/variables.scss';
 
 </style>
