@@ -1,6 +1,10 @@
 <template>
     <nav class="navbar-container flex-space-between">
-        <img src="@/assets/img/cropped-Group-39-2x.png" alt="navbar_logo">
+        <!-- logo -->
+        <a href="#home">
+            <img src="@/assets/img/cropped-Group-39-2x.png" alt="navbar_logo">
+        </a>
+        <!-- voci di menù popolate tramite props -->
         <ul class="flex-space-between">
             <li v-for="(item, i) in navLinks" :key="item.name + i">
                 <a :href="item.link + item.name">
@@ -20,37 +24,8 @@ import Button from './Button.vue'
 
 export default {
     name: 'Navbar',
-    components: { Button },
-    data() {
-        return {
-            navLinks: [
-                {
-                    name: 'home',
-                    link: '#'
-                },
-                {
-                    name: 'about',
-                    link: '#'
-                },
-                {
-                    name: 'services',
-                    link: '#'
-                },
-                {
-                    name: 'showcase',
-                    link: '#'
-                },
-                {
-                    name: 'blog',
-                    link: '#'
-                },
-                {
-                    name: 'contact',
-                    link: '#'
-                }
-            ]
-        }
-    }
+    props: { navLinks: Array },
+    components: { Button }
 }
 </script>
 

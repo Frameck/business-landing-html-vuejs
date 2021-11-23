@@ -13,7 +13,7 @@
             </div>
         </nav>
 
-        <Navbar></Navbar>
+        <Navbar :navLinks="this.navLinks"></Navbar>
 
         <Hero :text="this.heroText"></Hero>
     </header>
@@ -28,6 +28,32 @@ export default {
     components: { Navbar, Hero },
     data() {
         return {
+            navLinks: [
+                {
+                    name: 'home',
+                    link: '#'
+                },
+                {
+                    name: 'about',
+                    link: '#'
+                },
+                {
+                    name: 'services',
+                    link: '#'
+                },
+                {
+                    name: 'showcase',
+                    link: '#'
+                },
+                {
+                    name: 'blog',
+                    link: '#'
+                },
+                {
+                    name: 'contact',
+                    link: '#'
+                }
+            ],
             heroText: {
                 subtitle: '17 years of experience',
                 title: 'Focus on Your Business',
@@ -61,6 +87,12 @@ export default {
 
             * {
                 margin-right: $spacing * 1.5;
+            }
+        }
+
+        .sectiontext-container {
+            h1 {
+                font-size: 65px;
             }
         }
     }

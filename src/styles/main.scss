@@ -11,6 +11,13 @@
 //     font-family: "Inter";
 // }
 
+
+.main-container,
+.footer-container {
+    padding-left: $spacing * 10;
+    padding-right: $spacing * 10;
+}
+
 .flex-space-between {
     display: flex;
     justify-content: space-between;
