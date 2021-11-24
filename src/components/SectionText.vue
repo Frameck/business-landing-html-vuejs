@@ -46,30 +46,31 @@ export default {
             margin-bottom: $spacing * 3;
         }
 
-        .green-divider {
-            width: 30%;
-            display: flex;
-            gap: $spacing;
-            margin-bottom: $spacing * 4;
-
-            * {
-                min-height: $spacing * .7;
-                background: get-values($colors, 'gradients', 'green');
-                border-radius: 20px;
-            }
-
-            .left-divider {
-                width: $spacing * 2;
-            }
-
-            .right-divider {
-                width: $spacing * 5;
-            }
-        }
-
         p {
             color: get-values($colors, 'text', 'grey-1');
             margin-bottom: $spacing * 6;
+            font-size: 15px;
+        }
+    }
+
+    .green-divider {
+        width: 30%;
+        display: flex;
+        gap: $spacing;
+        margin-bottom: $spacing * 4;
+
+        * {
+            min-height: $spacing * .7;
+            background: get-values($colors, 'gradients', 'green');
+            border-radius: 20px;
+        }
+
+        .left-divider {
+            width: $spacing * 2;
+        }
+
+        .right-divider {
+            width: $spacing * 5;
         }
     }
 </style>
