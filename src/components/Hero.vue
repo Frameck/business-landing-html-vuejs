@@ -1,15 +1,6 @@
 <template>
     <div class="hero-container">
         <div class="hero-content">
-            <!-- <h5>{{ text.subtitle.toUpperCase() }}</h5>
-            <h1>{{ text.title }}</h1>
-            <h1>{{ colorLastWord }}</h1>
-            <div class="green-divider">
-                <div class="left-divider"></div>
-                <div class="right-divider"></div>
-            </div>
-            <p>{{ text.text }}</p> -->
-
             <SectionText :text="text"></SectionText>
 
             <Button :text="'read more'" :type="'secondary'"></Button>

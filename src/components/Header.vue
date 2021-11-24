@@ -93,6 +93,7 @@ export default {
         .sectiontext-container {
             h1 {
                 font-size: 65px;
+                font-weight: 600;
             }
         }
     }

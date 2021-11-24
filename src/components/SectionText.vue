@@ -35,7 +35,7 @@ export default {
 @import '@/styles/variables.scss';
 
     .sectiontext-container {
-        // width: 40%;
+        margin-top: $spacing * 7;
 
         h5 {
             letter-spacing: $spacing / 2.5;
@@ -44,6 +44,7 @@ export default {
 
         h1 {
             margin-bottom: $spacing * 3;
+            font-weight: 400;
         }
 
         p {
